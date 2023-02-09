@@ -14,5 +14,3 @@ def guessGame():
             print("\nYour guess is too big.")
 
     print(f"Good job, {name}! You guessed my number in {tries} guesses!")
-
-guessGame()
