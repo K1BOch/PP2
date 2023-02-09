@@ -13,4 +13,5 @@ def guessGame():
         elif(num > guessNumber):
             print("\nYour guess is too big.")
 
-    print(f"Good job, {name}! You guessed my number in {tries} guesses!")
+    print(f"\nGood job, {name}! You guessed my number in {tries} guesses!")
+    
