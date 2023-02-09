@@ -1,21 +1,20 @@
 class Shape():
-    def __init__(self):
-        pass
-    def area(self, length, width):
-        return 0
+    area = 0
+    
 
 class Rectangle(Shape):
     def __init__(self, length = 0, width = 0):
-        Shape.__init__(self)
         self.length = length
         self.width = width
-
-    def area(self):
-        return self.length * self.width
+    
+    def display(self):
+        self.area = self.length * self.width
+        return self.area
 
 l = int(input())
 w = int(input())
-r = Rectangle(l, w)
-print(r.area())
+r = Rectangle(l,w)
+print(r.display())
 
-print(Rectangle().area())
+
+print(Rectangle(4,4).display())
