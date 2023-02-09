@@ -1,5 +1,5 @@
 def reverseSentence(s):
-    s = s.split(" ")
+    s = s.split()
     l = list(s)
     l.reverse()
     for i in l:
