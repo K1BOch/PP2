@@ -30,7 +30,6 @@ icon_play = pygame.image.load(r'C:\Users\Professional\Desktop\PP2\Lab7\image\\pl
 icon_stop = pygame.image.load(r'C:\Users\Professional\Desktop\PP2\Lab7\image\\stop.png').convert_alpha()
 icon_next = pygame.image.load(r'C:\Users\Professional\Desktop\PP2\Lab7\image\\next.png').convert_alpha()
 icon_previous = pygame.image.load(r'C:\Users\Professional\Desktop\PP2\Lab7\image\\prev.png').convert_alpha()
-juzz_icon = pygame.image.load(r"C:\Users\Professional\Desktop\PP2\Lab7\image\\1200x1200bf-60.jpg").convert()
 stan_icon = pygame.image.load(r"C:\Users\Professional\Desktop\PP2\Lab7\image\\Em_curt.jpg")
 loseYorself_icon = pygame.image.load(r"C:\Users\Professional\Desktop\PP2\Lab7\image\\Em_show.jpg")
 Godzila_icon = pygame.image.load(r"C:\Users\Professional\Desktop\PP2\Lab7\image\\Em_mur.jpg")
@@ -39,7 +38,6 @@ icon_play = pygame.transform.scale(icon_play,(icon_play.get_width()//8,icon_play
 icon_stop = pygame.transform.scale(icon_stop,(icon_stop.get_width()//8,icon_stop.get_height()//8))
 icon_next = pygame.transform.scale(icon_next,(icon_next.get_width()//10,icon_next.get_height()//10))
 icon_previous = pygame.transform.scale(icon_previous,(icon_previous.get_width()//10,icon_previous.get_height()//10))
-juzz_icon = pygame.transform.scale(juzz_icon,(juzz_icon.get_width()//4.9,juzz_icon.get_height()//4.9))
 stan_icon = pygame.transform.scale(stan_icon,(stan_icon.get_width()//4.19,stan_icon.get_height()//4.19))
 loseYorself_icon = pygame.transform.scale(loseYorself_icon,(loseYorself_icon.get_width()//3.27,loseYorself_icon.get_height()//3.27))
 Godzila_icon = pygame.transform.scale(Godzila_icon,(Godzila_icon.get_width()//5.03,Godzila_icon.get_height()//3.58))
@@ -162,13 +160,11 @@ while 1:
         vol -= 0.01
         pygame.mixer.music.set_volume(vol)
 
-    if icon == 0 or icon == 1:
-        sc.blit(juzz_icon,(80,90))
-    if icon == 2:
+    if icon == 0:
         sc.blit(Godzila_icon, (80,90))
-    if icon == 3:
+    if icon == 1:
         sc.blit(loseYorself_icon, (80,90))
-    if icon == 4:
+    if icon == 2:
         sc.blit(stan_icon, (80,90))
     
     pygame.display.update()
